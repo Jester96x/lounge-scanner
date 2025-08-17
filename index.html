@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lounge Scanner</title>
+  <!-- Scanner library -->
+  <script src="https://cdn.jsdelivr.net/npm/instascan@1.0.0/dist/instascan.min.js"></script>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      text-align: center; 
+      padding: 20px;
+    }
+    button { 
+      padding: 10px 20px; 
+      margin: 10px; 
+      font-size: 16px; 
+      background: #2b8a3e; 
+      color: white; 
+      border: none; 
+      border-radius: 5px;
+    }
+    #scanner { 
+      width: 100%; 
+      max-width: 500px; 
+      margin: 20px auto;
+    }
+    #preview { 
+      width: 100%; 
+      border: 2px solid #333; 
+    }
+    #logs { 
+      margin: 20px auto; 
+      text-align: left; 
+      max-width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lounge Scanner</h1>
+  <button id="checkin">Check-In</button>
+  <button id="checkout">Check-Out</button>
+  <div id="scanner">
+    <video id="preview"></video>
+  </div>
+  <div id="logs">Scans will appear here...</div>
+  <script src="app.js"></script>
+</body>
+</html>
